@@ -2,22 +2,23 @@
   "manifest_version": 3,
   "name": "GitHub Purple Commits",
   "version": "1.0",
-  "description": "Replaces the green deposit squares with purple ones. This extension does not collect personal data from users.",
+  "description": "Replaces green contribution squares with purple ones. This extension does not collect any data.",
   
   "browser_specific_settings": {
     "gecko": {
       "id": "purple-commits-extension@my-addon",
-      "strict_min_version": "109.0",
-      "data_collection_permissions": false
+      "strict_min_version": "142.0",
+      "data_collection_permissions": {
+        "used": ["none"],
+        "required": ["none"]
+      }
     }
   },
-
   "icons": {
     "32": "icons/icon-32.png",
     "48": "icons/icon-48.png",
     "128": "icons/icon-128.png"
   },
-
   "content_scripts": [
     {
       "matches": ["*://*.github.com/*"],
@@ -26,6 +27,5 @@
     }
   ],
   
-  "host_permissions": ["*://*.github.com/*"],
-  "permissions": []
+  "host_permissions": ["*://*.github.com/*"]
 }
