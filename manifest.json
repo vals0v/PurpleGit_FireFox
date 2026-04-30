@@ -2,11 +2,11 @@
   "manifest_version": 3,
   "name": "GitHub Purple Commits",
   "version": "1.0",
-  "description": "Replaces green deposit squares with purple ones.",
+  "description": "Replaces the green deposit squares with purple ones. This extension does not collect personal data from users.",
   
   "browser_specific_settings": {
     "gecko": {
-      "id": "purple-commits@your-nickname",
+      "id": "purple-commits-extension@my-addon",
       "strict_min_version": "109.0"
     }
   },
@@ -25,5 +25,6 @@
     }
   ],
   
-  "host_permissions": ["*://*.github.com/*"]
+  "host_permissions": ["*://*.github.com/*"],
+  "permissions": []
 }
