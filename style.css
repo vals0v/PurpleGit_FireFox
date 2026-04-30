@@ -1,0 +1,20 @@
+/* Light theme GitHub */
+[data-color-mode="light"] {
+  --color-calendar-graph-day-L1-bg: #e9d5ff !important;
+  --color-calendar-graph-day-L2-bg: #c084fc !important;
+  --color-calendar-graph-day-L3-bg: #9333ea !important;
+  --color-calendar-graph-day-L4-bg: #581c87 !important;
+}
+
+/* Dark theme GitHub */
+[data-color-mode="dark"] {
+  --color-calendar-graph-day-L1-bg: #3b0764 !important;
+  --color-calendar-graph-day-L2-bg: #581c87 !important;
+  --color-calendar-graph-day-L3-bg: #7e22ce !important;
+  --color-calendar-graph-day-L4-bg: #a855f7 !important;
+}
+
+/* Just in case, repaint the legend at the bottom of the chart */
+.ContributionCalendar-label {
+  color: var(--color-fg-muted) !important;
+}
