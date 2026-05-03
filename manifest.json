@@ -9,27 +9,22 @@
       "id": "purple-commits-extension@my-addon",
       "strict_min_version": "142.0",
       "data_collection_permissions": {
-        "opt_in": [],
-        "required": []
+        "required": ["none"]
       }
     }
   },
-
   "permissions": [
     "storage",
     "activeTab"
   ],
-
   "action": {
     "default_popup": "menu.html"
   },
-
   "icons": {
     "32": "icons/icon-32.png",
     "48": "icons/icon-48.png",
     "128": "icons/icon-128.png"
   },
-
   "content_scripts": [
     {
       "matches": ["*://*.github.com/*"],
