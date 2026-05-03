@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #0d1117; 
+      color: white;
+      width: 150px;
+      padding: 10px;
+      font-family: sans-serif;
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .color-btn {
+      width: 35px;
+      height: 35px;
+      border-radius: 4px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: transform 0.1s;
+    }
+    .color-btn:hover { transform: scale(1.1); }
+    .color-btn.active { border-color: white; }
+
+    .green { background-color: #39d353; }
+    .yellow { background-color: #f2cc60; }
+    .red { background-color: #fa7e7e; }
+    .blue { background-color: #4182eb; }
+    .purple { background-color: #9333ea; }
+    .pink { background-color: #ff69b4; }
+  </style>
+</head>
+<body>
+  <span style="font-size: 12px;">Select Color</span>
+  <div class="grid">
+    <div class="color-btn green" data-color="green"></div>
+    <div class="color-btn yellow" data-color="yellow"></div>
+    <div class="color-btn red" data-color="red"></div>
+    <div class="color-btn blue" data-color="blue"></div>
+    <div class="color-btn purple" data-color="purple"></div>
+    <div class="color-btn pink" data-color="pink"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
